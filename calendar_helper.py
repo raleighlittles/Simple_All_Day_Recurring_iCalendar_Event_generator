@@ -107,7 +107,9 @@ def add_events_to_calendar(calendar_obj, events_list, event_metadata):
 
         event_obj = icalendar.Event()
         
-        event_obj.add("name", f"{event_metadata[event_name_key]} ({event_idx} of {len(events_list)} )")
+        # Google Calendar uses the "summary" field as the event title
+        # see: https://support.google.com/calendar/thread/260680549/importing-all-day-events-from-ical-file-event-title-blank
+        event_obj.add("summary", f"{event_metadata[event_name_key]} ({event_idx} of {len(events_list)} )")
 
         # All-day events cannot have a start time associated with them, hence the date
         # instead of the datetime object

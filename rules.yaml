@@ -2,10 +2,10 @@
 
   date_fmt_str: "%Y-%m-%d"
   # When the first event occurs
-  start_date: "2024-01-12"
+  start_date: "2025-01-10"
 
   # No events can occur after this date
-  last_possible_date: "2024-12-31"
+  last_possible_date: "2025-12-31"
 
   # Can be either: "days" or "weeks"
   frequency:
@@ -16,7 +16,7 @@
     name: "Raleigh Littles"
     role: "Author"
 
-  common_description: "Off-Friday" # appears in the title/'name' of all events
+  common_description: "Off-Friday" # appears in the title of all events
 
   location: "Tucson, AZ"
 
